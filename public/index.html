@@ -9,6 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2" rel="stylesheet">
+    <style>
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .space-y-16 > div {
+        opacity: 0;
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+    .space-y-16 > div:nth-child(1) { animation-delay: 0.2s; }
+    .space-y-16 > div:nth-child(2) { animation-delay: 0.4s; }
+    .space-y-16 > div:nth-child(3) { animation-delay: 0.6s; }
+</style>
 
      
 </head>
@@ -44,7 +57,66 @@
         
     
 
-        <section id="about" class="py-16 bg-white">
+
+<section id="impact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-8 text-center text-green-800">The Story of Our Forests: A Call to Action</h2>
+        
+        <!-- Introduction -->
+        <div class="mb-12 text-center">
+            <p class="text-xl text-gray-700">Our forests are the lungs of our planet, home to countless species, and key to our survival. But they're disappearing at an alarming rate. Let's explore the impact and how we can make a difference.</p>
+        </div>
+        
+        <!-- Story Timeline -->
+        <div class="space-y-16">
+            <!-- Climate Change -->
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 p-4">
+                    <img src="forestfire.jpg" alt="Deforestation and Climate Change" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-700">The Heated Debate: Climate Change</h3>
+                    <p class="mb-4">As our forests diminish, so does Earth's natural defense against climate change. Trees absorb CO2, but when they're cut down, that carbon is released back into the atmosphere.</p>
+                    <ul class="list-disc list-inside mb-4 text-gray-700">
+                        <li>Deforestation accounts for about 15% of all greenhouse gas emissions</li>
+                        <li>A single tree can absorb up to 48 pounds of CO2 per year</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300">Learn More About Forest Carbon</a>
+                </div>
+            </div>
+            
+            <!-- Biodiversity Loss -->
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="w-full md:w-1/2 p-4">
+                    <img src="nature.jpg" alt="Biodiversity Loss" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-700">The Silent Extinction: Biodiversity Loss</h3>
+                    <p class="mb-4">Forests are teeming with life, hosting 80% of the world's terrestrial biodiversity. As we lose forests, we lose entire species - many before they're even discovered.</p>
+                    <ul class="list-disc list-inside mb-4 text-gray-700">
+                        <li>Up to 28,000 species may go extinct in the next quarter century due to deforestation</li>
+                        <li>Tropical rainforests, covering just 6% of Earth's surface, are home to over half of the world's plant and animal species</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300">Explore Biodiversity Hotspots</a>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            
+        </div>
+    </div>
+</section>
+<div class="bg-green-600 text-white px-8 py-10 shadow-xl">
+                <h3 class="text-3xl font-bold mb-4 text-center">Your Chapter in This Story</h3>
+                <p class="text-xl mb-6 text-center">Every action, no matter how small, writes a new page in the story of our forests. What will your contribution be?</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    
+                    <a href="#" class="bg-white text-green-700 font-bold py-2 px-4 rounded hover:bg-gray-100 transition duration-300">Plant a Tree</a>
+                    
+                </div>
+            </div>
+
+<section id="about" class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold mb-8 text-center">Message from our Sponsors...</h2>
         <div class="space-y-12">
@@ -77,43 +149,6 @@
     </div>
 </section>
 
-        <section id="impact" class="py-16 bg-green-100">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold mb-8 text-center">The Impact of Deforestation</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold mb-4">Climate Change</h3>
-                        <p>Deforestation contributes to climate change by releasing stored carbon into the atmosphere and reducing the Earth's capacity to absorb CO2.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold mb-4">Biodiversity Loss</h3>
-                        <p>Forests are home to countless species. Their destruction leads to habitat loss and threatens the survival of many plants and animals.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold mb-4">Soil Erosion</h3>
-                        <p>Without tree roots to hold soil in place, deforestation increases erosion, leading to landslides and reduced soil fertility.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold mb-4">Water Cycle Disruption</h3>
-                        <p>Forests play a crucial role in the water cycle. Their loss can lead to altered rainfall patterns and increased flooding.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="action" class="py-16 bg-green-600 text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl font-bold mb-8">Take Action: Let It Grow!</h2>
-                <p class="text-xl mb-8">Join our mission to restore and protect forests worldwide. Use our "Let It Grow" service to:</p>
-                <ul class="list-disc list-inside text-left max-w-md mx-auto mb-8">
-                    <li>View satellite imagery showing the transformation of landscapes due to deforestation</li>
-                    <li>Analyze the effects of forest loss on local climate patterns</li>
-                    <li>Get personalized recommendations for tree seedlings suited to your local environment</li>
-                    <li>Track the positive impact of reforestation efforts over time</li>
-                </ul>
-                <a href="/let-it-grow" class="bg-white text-green-600 hover:bg-green-100 font-bold py-3 px-6 rounded-full text-lg transition duration-300">Explore Let It Grow</a>
-            </div>
-        </section>
     </main>
 
     <footer class="bg-green-800 text-white py-8">
